@@ -1,7 +1,7 @@
 title: Healing House
 description: Massage therapy clinic in Abbotsford, BC, Canada
-baseurl: ""
-url: ""
+baseurl: "/healinghouse"
+url: "https://yourusername.github.io"
 permalink: pretty
 
 # Build settings

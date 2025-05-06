@@ -18,9 +18,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Add active class to current page in navigation
     const currentLocation = window.location.pathname;
-    const navLinks = document.querySelectorAll('.nav-links a');
+    const navLinkElements = document.querySelectorAll('.nav-links a');
     
-    navLinks.forEach(link => {
+    navLinkElements.forEach(link => {
         const linkPath = link.getAttribute('href');
         if (currentLocation.includes(linkPath) && linkPath !== '/') {
             link.classList.add('active');
@@ -31,16 +31,16 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Mobile menu toggle
     const navToggle = document.getElementById('nav-toggle');
-    const navLinks = document.querySelector('.nav-links');
+    const navLinksContainer = document.querySelector('.nav-links');
     
     if (navToggle) {
         navToggle.addEventListener('change', function() {
             if (this.checked) {
-                navLinks.style.transform = 'translateY(0)';
-                navLinks.style.opacity = '1';
+                navLinksContainer.style.transform = 'translateY(0)';
+                navLinksContainer.style.opacity = '1';
             } else {
-                navLinks.style.transform = 'translateY(-150%)';
-                navLinks.style.opacity = '0';
+                navLinksContainer.style.transform = 'translateY(-150%)';
+                navLinksContainer.style.opacity = '0';
             }
         });
         
@@ -51,8 +51,8 @@ document.addEventListener('DOMContentLoaded', function() {
             
             if (!isNavLinks && !isNavToggleLabel && navToggle.checked) {
                 navToggle.checked = false;
-                navLinks.style.transform = 'translateY(-150%)';
-                navLinks.style.opacity = '0';
+                navLinksContainer.style.transform = 'translateY(-150%)';
+                navLinksContainer.style.opacity = '0';
             }
         });
     }

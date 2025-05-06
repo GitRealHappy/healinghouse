@@ -25,7 +25,7 @@ Healing House is conveniently located in downtown Abbotsford, with easy access t
     <div class="map-container">
         <div class="responsive-map">
             <!-- Replace this with an actual Google Maps embed code when the site goes live -->
-            <img src="/assets/images/map-placeholder.jpg" alt="Map showing location of Healing House" class="map-image">
+            <img src="{{ '/assets/images/map-placeholder.jpg' | relative_url }}" alt="Map showing location of Healing House" class="map-image">
         </div>
     </div>
 </div>
