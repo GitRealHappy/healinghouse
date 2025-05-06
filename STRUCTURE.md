@@ -9,6 +9,7 @@ This document provides an overview of the Healing House website architecture, co
 - **Custom Domain:** Configured with GitHub Pages
 - **Languages:** HTML, CSS, JavaScript, Markdown
 - **Browser Support:** Modern browsers (Chrome, Firefox, Safari, Edge)
+- **Google Maps:** Embedded responsive map
 
 ## Directory Structure
 
@@ -33,6 +34,8 @@ healinghouse/
 │   ├── location.md        # Location information
 │   └── policies.md        # Clinic policies
 ├── index.html             # Homepage
+├── 404.html               # Custom 404 error page
+├── CNAME                  # Custom domain configuration
 ├── README.md              # Project information
 └── STRUCTURE.md           # This file
 ```
@@ -43,7 +46,7 @@ healinghouse/
 
 The `_config.yml` file contains the site configuration including:
 - Site title and description
-- URL configuration
+- URL configuration with baseurl set for GitHub Pages
 - Build settings
 - Permalink structure (set to 'pretty' for clean URLs)
 
@@ -51,6 +54,7 @@ The `_config.yml` file contains the site configuration including:
 
 1. **default.html**: The main layout template used by all pages, containing:
    - Head section with meta tags and CSS
+   - Google Fonts integration for Montserrat
    - Header include
    - Main content area
    - Footer include
@@ -64,19 +68,19 @@ The `_config.yml` file contains the site configuration including:
 
 1. **header.html**: Site navigation with:
    - Logo and site name
-   - Responsive navigation menu
-   - "Book Now" CTA button
-   - Mobile-friendly hamburger menu
+   - Responsive navigation menu with clean URLs
+   - "Book Now" CTA button linking to Jane App
+   - Mobile-friendly hamburger menu with touch support
 
 2. **footer.html**: Site footer with:
    - Contact information
    - Business hours
    - Social media links
-   - Copyright notice
+   - Copyright notice with dynamic year
 
 3. **book-cta.html**: Reusable call-to-action component with:
    - Heading and description
-   - "Book Now" button linking to external booking system
+   - "Book Now" button linking to Jane App booking system
 
 ### Stylesheets
 
@@ -85,6 +89,9 @@ The CSS is organized with:
 - Mobile-first responsive design
 - Modular components with specific styling
 - Media queries for different device sizes
+- Responsive map container for Google Maps
+- Landscape mode optimizations
+- Overflow control to prevent horizontal scrolling
 
 ## Page Structure
 
@@ -100,11 +107,35 @@ All content pages use the page.html layout and follow a consistent structure:
 - Content sections specific to the page
 - Book Now CTA at the bottom
 
+### Location Page
+- Address information
+- Responsive Google Maps embed
+- Directions and parking information
+
 ## Navigation Structure
 
 - **Main Navigation:** Home, The Team, Pricing, Location, Policies
 - **Book Now Button:** Present in header and as CTAs throughout the site
 - **Footer Links:** Contact info, business hours, social media
+- **Mobile Navigation:** Hamburger menu with improved touch support
+
+## Mobile Optimizations
+
+1. **Responsive Navigation:**
+   - Touch-friendly hamburger menu
+   - Proper event handling for mobile devices
+   - Landscape mode support
+   - Improved visibility and accessibility
+
+2. **Responsive Maps:**
+   - Aspect ratio-based responsive container
+   - Mobile-specific layout adjustments
+   - Prevents overflow issues on small screens
+
+3. **Cross-Device Compatibility:**
+   - Horizontal scroll prevention
+   - Flexible layouts that adapt to screen size
+   - Optimized tap targets for mobile users
 
 ## Design Decisions
 
@@ -121,7 +152,7 @@ All content pages use the page.html layout and follow a consistent structure:
 
 3. **Responsive Design:**
    - Mobile-first approach
-   - Breakpoint at 768px for tablet/desktop layouts
+   - Breakpoints at 768px for tablet and 900px for landscape
    - Collapsible navigation menu on mobile
    - Flexible grid layouts that adapt to screen size
 
@@ -130,6 +161,11 @@ All content pages use the page.html layout and follow a consistent structure:
 1. **Jane App Integration:**
    - "Book Now" buttons link to the clinic's Jane App scheduling system
    - Links open in a new tab to maintain the user's place on the website
+
+2. **Google Maps Integration:**
+   - Embedded Google Maps for location visualization
+   - Responsive container adapts to all screen sizes
+   - Mobile-optimized interaction
 
 ## Adding New Pages
 
@@ -155,4 +191,7 @@ Potential future improvements for the website:
 2. Online intake forms for new clients
 3. Testimonials carousel on the homepage
 4. Newsletter signup form
-5. Additional service detail pages 
+5. Additional service detail pages
+6. Social media feed integration
+7. Accessibility improvements (ARIA attributes, keyboard navigation)
+8. Performance optimizations (image lazy loading, critical CSS) 
