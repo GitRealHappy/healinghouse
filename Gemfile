@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.2.0"
+gem "jekyll", "~> 4.3.3"
 
 # If you want to use GitHub Pages, uncomment the line below
 # gem "github-pages", group: :jekyll_plugins
@@ -18,4 +18,10 @@ platforms :mingw, :x64_mingw, :mswin, :jruby do
 end
 
 # Performance-booster for watching directories on Windows
-gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin] 
+gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
+
+# Add these gems for Ruby 3.3.0 compatibility
+gem "csv"
+gem "base64"
+gem "bigdecimal"
+gem "webrick" 
