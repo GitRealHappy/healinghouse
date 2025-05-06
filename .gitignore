@@ -1,0 +1,21 @@
+# Jekyll build output
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+
+# Bundler config
+.bundle
+vendor/bundle
+
+# Mac OS
+.DS_Store
+
+# Editor specific files
+*.sublime-project
+*.sublime-workspace
+.vscode/
+.idea/
+*.swp
+*.swo 
