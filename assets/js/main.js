@@ -32,15 +32,40 @@ document.addEventListener('DOMContentLoaded', function() {
     // Mobile menu toggle
     const navToggle = document.getElementById('nav-toggle');
     const navLinksContainer = document.querySelector('.nav-links');
+    const navToggleLabel = document.querySelector('.nav-toggle-label');
+    
+    // Fix for mobile devices - add touch event to hamburger menu
+    if (navToggleLabel) {
+        navToggleLabel.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            if (navToggle) {
+                navToggle.checked = !navToggle.checked;
+                
+                if (navToggle.checked) {
+                    navLinksContainer.style.transform = 'translateY(0)';
+                    navLinksContainer.style.opacity = '1';
+                    navLinksContainer.style.visibility = 'visible';
+                } else {
+                    navLinksContainer.style.transform = 'translateY(-150%)';
+                    navLinksContainer.style.opacity = '0';
+                    navLinksContainer.style.visibility = 'hidden';
+                }
+            }
+        });
+    }
     
     if (navToggle) {
         navToggle.addEventListener('change', function() {
             if (this.checked) {
                 navLinksContainer.style.transform = 'translateY(0)';
                 navLinksContainer.style.opacity = '1';
+                navLinksContainer.style.visibility = 'visible';
             } else {
                 navLinksContainer.style.transform = 'translateY(-150%)';
                 navLinksContainer.style.opacity = '0';
+                navLinksContainer.style.visibility = 'hidden';
             }
         });
         
@@ -53,6 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 navToggle.checked = false;
                 navLinksContainer.style.transform = 'translateY(-150%)';
                 navLinksContainer.style.opacity = '0';
+                navLinksContainer.style.visibility = 'hidden';
             }
         });
     }

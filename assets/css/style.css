@@ -78,7 +78,7 @@ img {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: .5rem;
 }
 
 .logo-container {
@@ -329,6 +329,7 @@ img {
 @media (max-width: 768px) {
     .header-container {
         padding: 1rem;
+        position: relative;
     }
     
     .logo {
@@ -344,8 +345,11 @@ img {
         cursor: pointer;
         position: absolute;
         right: 1rem;
-        top: 1.5rem;
+        top: 50%;
+        transform: translateY(-50%);
         z-index: 2;
+        width: 30px;
+        height: 30px;
     }
     
     .nav-toggle-label span,
@@ -357,6 +361,11 @@ img {
         width: 24px;
         position: relative;
         transition: all 0.3s ease-in-out;
+    }
+    
+    .nav-toggle-label span {
+        top: 14px;
+        left: 3px;
     }
     
     .nav-toggle-label span::before,
@@ -387,6 +396,7 @@ img {
         transition: transform 0.3s ease-in-out;
         opacity: 0;
         z-index: 1;
+        visibility: hidden;
     }
     
     .nav-links li {
@@ -396,6 +406,7 @@ img {
     .nav-toggle:checked ~ .nav-links {
         transform: translateY(0);
         opacity: 1;
+        visibility: visible;
     }
     
     .hero h1 {
@@ -417,5 +428,23 @@ img {
     
     .social-icons {
         justify-content: center;
+    }
+}
+
+/* Landscape mode fixes */
+@media (max-width: 900px) and (orientation: landscape) {
+    .site-header {
+        position: relative;
+    }
+    
+    .nav-toggle-label {
+        display: block;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .nav-links {
+        max-height: 80vh;
+        overflow-y: auto;
     }
 } 
