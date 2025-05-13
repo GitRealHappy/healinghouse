@@ -1,12 +1,13 @@
 /* Base Styles */
 :root {
-    --primary-color: #4a7c59;
-    --secondary-color: #c9e4ca;
-    --accent-color: #f9c784;
-    --text-color: #333333;
-    --light-color: #ffffff;
-    --dark-color: #2d3047;
-    --gray-color: #f5f5f5;
+    /* Warm, Sophisticated Color Palette */
+    --primary-color: #8A6552;     /* Rich warm brown - primary brand color */
+    --secondary-color: #D2C4B5;   /* Soft taupe - secondary elements */
+    --accent-color: #C19277;      /* Warm terracotta - accent/CTA elements */
+    --text-color: #3E332E;        /* Deep brown - main text */
+    --light-color: #F9F6F2;       /* Warm off-white - backgrounds */
+    --dark-color: #2D2420;        /* Dark chocolate - footer, dark areas */
+    --gray-color: #EDE8E2;        /* Cream/beige - light backgrounds */
     --font-family: 'Montserrat', sans-serif;
 }
 
@@ -247,6 +248,152 @@ img {
     padding-bottom: 0.2rem;
 }
 
+.text-link:hover {
+    border-color: var(--accent-color);
+}
+
+/* Team Page Styles */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem; 
+    margin-bottom: 3rem; 
+}
+
+.team-member {
+    background-color: var(--light-color); 
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    display: flex; 
+    flex-direction: column; 
+}
+
+.team-member img.team-photo {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%; 
+    object-fit: cover;
+    margin: 0 auto 1rem auto; 
+    display: block;
+}
+
+.team-member h3 { 
+    color: var(--primary-color);
+    text-align: center; 
+    margin-bottom: 0.25rem; 
+}
+
+.team-member .team-title { 
+    text-align: center;
+    font-style: italic;
+    color: var(--text-color);
+    margin-bottom: 1rem; 
+}
+
+.team-member p { 
+    margin-bottom: 1rem; 
+    text-align: justify; 
+}
+
+.team-member p:last-of-type {
+    margin-bottom: 0;
+}
+
+.team-member p strong { 
+    color: var(--dark-color);
+}
+
+/* Replace p:has(strong) with more specific .specialties styling */
+.team-member .specialties {
+    margin-top: 0; /* Was 1rem in p:has(strong) */
+    margin-bottom: 1.5rem; /* Space before the book button */
+    background-color: var(--gray-color); 
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-size: 0.9rem; /* Slightly smaller text for specialties */
+}
+
+.team-member .bio-text {
+    margin-bottom: 1rem; /* Space before specialties or book button */
+}
+
+.team-member .bio-intro {
+    margin-bottom: 0.5rem; /* Space before dots/read-more */
+    /* text-align: justify; Ensure it inherits or set if needed */
+}
+
+.team-member .bio-intro .dots {
+    display: inline; /* Keep dots on the same line */
+}
+
+.team-member .more-text {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    /* text-align: justify; Ensure it inherits or set if needed */
+}
+
+.team-member .more-text.expanded {
+    max-height: 1000px; /* Adjust if bios are extremely long */
+}
+
+.team-member .more-text p {
+    margin-bottom: 1rem; /* Spacing for paragraphs within expanded text */
+}
+
+.team-member .more-text p:last-child {
+    margin-bottom: 0;
+}
+
+.read-more-btn {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.25rem 0; /* Minimal padding */
+    display: inline-block;
+    margin-top: 0.5rem; /* Space above the button */
+    text-decoration: underline;
+}
+
+.read-more-btn:hover {
+    color: var(--accent-color);
+}
+
+.team-book-button {
+    display: block; 
+    width: 100%; 
+    text-align: center;
+    margin-top: auto; 
+    padding: 0.75rem 1rem; 
+}
+
+/* General page content spacing improvements */
+/* These will apply to team.md and other similar pages using `layout: page` */
+.page-content h1,
+.page-content h2,
+.page-content h3,
+.page-content h4 {
+    margin-top: 2rem; /* Add space above headings */
+    margin-bottom: 1rem; /* Adjust space below headings */
+}
+
+.page-content h1:first-child,
+.page-content h2:first-child {
+    margin-top: 0; /* No top margin for the very first heading on a page */
+}
+
+.page-content p {
+    margin-bottom: 1.5rem; /* Space below paragraphs in general page content */
+}
+
+.page-content .team-grid + h2, /* Space above "Our Approach" if it follows grid */
+.page-content .team-grid + .section-title {
+    margin-top: 3rem;
+}
+
 /* Book CTA Section */
 .book-cta {
     background-color: var(--primary-color);
@@ -287,7 +434,7 @@ img {
 
 .footer-section h3 {
     margin-bottom: 1rem;
-    color: var(--accent-color);
+    color: var(--secondary-color);
 }
 
 .social-icons {
@@ -500,4 +647,145 @@ img {
         max-height: 80vh;
         overflow-y: auto;
     }
+}
+
+/* Team Page Styles */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem; 
+    margin-bottom: 3rem; 
+}
+
+.team-member {
+    background-color: var(--light-color); 
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    display: flex; 
+    flex-direction: column; 
+}
+
+.team-member img.team-photo {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%; 
+    object-fit: cover;
+    margin: 0 auto 1rem auto; 
+    display: block;
+}
+
+.team-member h3 { 
+    color: var(--primary-color);
+    text-align: center; 
+    margin-bottom: 0.25rem; 
+}
+
+.team-member .team-title { 
+    text-align: center;
+    font-style: italic;
+    color: var(--text-color);
+    margin-bottom: 1rem; 
+}
+
+.team-member p { 
+    margin-bottom: 1rem; 
+    text-align: justify; 
+}
+
+.team-member p:last-of-type {
+    margin-bottom: 0;
+}
+
+.team-member p strong { 
+    color: var(--dark-color);
+}
+
+/* Replace p:has(strong) with more specific .specialties styling */
+.team-member .specialties {
+    margin-top: 0; /* Was 1rem in p:has(strong) */
+    margin-bottom: 1.5rem; /* Space before the book button */
+    background-color: var(--gray-color); 
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-size: 0.9rem; /* Slightly smaller text for specialties */
+}
+
+.team-member .bio-text {
+    margin-bottom: 1rem; /* Space before specialties or book button */
+}
+
+.team-member .bio-intro {
+    margin-bottom: 0.5rem; /* Space before dots/read-more */
+    /* text-align: justify; Ensure it inherits or set if needed */
+}
+
+.team-member .bio-intro .dots {
+    display: inline; /* Keep dots on the same line */
+}
+
+.team-member .more-text {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    /* text-align: justify; Ensure it inherits or set if needed */
+}
+
+.team-member .more-text.expanded {
+    max-height: 1000px; /* Adjust if bios are extremely long */
+}
+
+.team-member .more-text p {
+    margin-bottom: 1rem; /* Spacing for paragraphs within expanded text */
+}
+
+.team-member .more-text p:last-child {
+    margin-bottom: 0;
+}
+
+.read-more-btn {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.25rem 0; /* Minimal padding */
+    display: inline-block;
+    margin-top: 0.5rem; /* Space above the button */
+    text-decoration: underline;
+}
+
+.read-more-btn:hover {
+    color: var(--accent-color);
+}
+
+.team-book-button {
+    display: block; 
+    width: 100%; 
+    text-align: center;
+    margin-top: auto; 
+    padding: 0.75rem 1rem; 
+}
+
+/* Book Now CTA Section */
+.book-cta {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.book-cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.book-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
 } 

@@ -87,11 +87,12 @@ The `_config.yml` file contains the site configuration including:
 The CSS is organized with:
 - CSS variables for consistent styling (colors, fonts)
 - Mobile-first responsive design
-- Modular components with specific styling
+- Modular components with specific styling (e.g., header, footer, services cards, team member cards)
 - Media queries for different device sizes
 - Responsive map container for Google Maps
 - Landscape mode optimizations
 - Overflow control to prevent horizontal scrolling
+- Styles for collapsible content sections (e.g., team bios)
 
 ## Page Structure
 
@@ -104,8 +105,14 @@ The CSS is organized with:
 ### Content Pages
 All content pages use the page.html layout and follow a consistent structure:
 - Page header with title
-- Content sections specific to the page
+- Content sections specific to the page (general spacing improved for readability)
 - Book Now CTA at the bottom
+
+### Team Page (pages/team.md)
+- Displays profiles of Registered Massage Therapists.
+- Features collapsible therapist bios with "Read More" / "Read Less" functionality for improved readability and engagement.
+- Each therapist profile includes a photo, title, detailed bio (expandable), list of specialties, and an individual "Book Now" button linking to the Jane App.
+- Uses a responsive grid layout for team member cards.
 
 ### Location Page
 - Address information
@@ -155,6 +162,7 @@ All content pages use the page.html layout and follow a consistent structure:
    - Breakpoints at 768px for tablet and 900px for landscape
    - Collapsible navigation menu on mobile
    - Flexible grid layouts that adapt to screen size
+   - Use of collapsible sections (e.g., team member bios) for better content management on smaller screens and reduced initial information overload.
 
 ## External Services Integration
 

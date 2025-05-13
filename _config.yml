@@ -1,8 +1,19 @@
 title: Healing House
 description: Massage therapy clinic in Abbotsford, BC, Canada
 baseurl: "/healinghouse"
-url: "https://yourusername.github.io"
+url: "www.healinghouseabby.ca"
 permalink: pretty
+
+logo: /assets/images/logo.png
+
+# Social media profiles - jekyll-seo-tag will use these
+social:
+  name: Healing House Massage and Wellness
+  links:
+    # - https://twitter.com/YourTwitterHandle
+    # - https://www.facebook.com/YourFacebookPage
+    # - https://www.instagram.com/YourInstagramProfile
+    # - https://www.linkedin.com/in/YourLinkedInProfile
 
 # Build settings
 markdown: kramdown
@@ -11,4 +22,9 @@ exclude:
   - Gemfile.lock
   - node_modules
   - README.md
-  - STRUCTURE.md 
+  - STRUCTURE.md
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap # Added for explicit sitemap generation 

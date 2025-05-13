@@ -82,4 +82,27 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // Read More functionality for Team Bios
+    const readMoreButtons = document.querySelectorAll('.read-more-btn');
+
+    readMoreButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const bioTextDiv = this.closest('.bio-text');
+            if (bioTextDiv) {
+                const moreTextDiv = bioTextDiv.querySelector('.more-text');
+                const dotsSpan = bioTextDiv.querySelector('.bio-intro .dots'); // Make selector more specific
+
+                if (moreTextDiv) {
+                    moreTextDiv.classList.toggle('expanded');
+                    const isExpanded = moreTextDiv.classList.contains('expanded');
+                    this.textContent = isExpanded ? 'Read Less' : 'Read More';
+                    this.setAttribute('aria-expanded', isExpanded); // Update accessibility attribute
+                    if (dotsSpan) {
+                        dotsSpan.style.display = isExpanded ? 'none' : 'inline';
+                    }
+                }
+            }
+        });
+    });
 });

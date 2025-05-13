@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Location
+title: Clinic Location & Directions | Healing House Abbotsford
+description: Find Healing House massage therapy clinic at 2633 Montrose Ave B, Abbotsford, BC. Get directions, parking info, and view our location map.
 permalink: /location/
 ---
 
