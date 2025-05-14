@@ -396,25 +396,29 @@ img {
 
 /* Book CTA Section */
 .book-cta {
-    background-color: var(--primary-color);
-    color: var(--light-color);
+    background: linear-gradient(rgba(45, 36, 32, 0.7), rgba(45, 36, 32, 0.7)), url('../images/reiki-heal.jpeg'); /* Using --dark-color #2D2420 with 70% opacity for overlay */
+    background-size: cover;
+    background-position: center;
     padding: 4rem 1rem;
     text-align: center;
+    position: relative; /* For potential pseudo-elements or child positioning */
 }
 
 .cta-content {
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
+    position: relative; /* To ensure content is above the background */
+    z-index: 1;
 }
 
 .book-cta h2 {
-    font-size: 2rem;
+    color: var(--light-color); /* Ensure heading is light against dark background */
     margin-bottom: 1rem;
 }
 
 .book-cta p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+    color: var(--gray-color); /* Lighter text for paragraph */
+    margin-bottom: 1.5rem;
 }
 
 /* Footer Styles */
@@ -769,23 +773,27 @@ img {
 
 /* Book Now CTA Section */
 .book-cta {
-    background-color: var(--primary-color);
-    color: var(--light-color);
+    background: linear-gradient(rgba(45, 36, 32, 0.7), rgba(45, 36, 32, 0.7)), url('../images/reiki-heal.jpeg'); /* Using --dark-color #2D2420 with 70% opacity for overlay */
+    background-size: cover;
+    background-position: center;
     padding: 4rem 1rem;
     text-align: center;
+    position: relative; /* For potential pseudo-elements or child positioning */
 }
 
 .cta-content {
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
+    position: relative; /* To ensure content is above the background */
+    z-index: 1;
 }
 
 .book-cta h2 {
-    font-size: 2rem;
+    color: var(--light-color); /* Ensure heading is light against dark background */
     margin-bottom: 1rem;
 }
 
 .book-cta p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+    color: var(--gray-color); /* Lighter text for paragraph */
+    margin-bottom: 1.5rem;
 } 

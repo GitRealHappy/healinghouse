@@ -14,7 +14,7 @@ Our massage therapy services are personalized to meet your specific needs. All s
 <div class="pricing-container">
     <div class="pricing-card">
         <h3>30 Minute Massage</h3>
-        <p class="price">$55</p>
+        <p class="price">$80</p>
         <p>Focused treatment for a specific area or concern. Ideal for quick relief of targeted pain or tension.</p>
         <ul>
             <li>Targeted treatment</li>
@@ -24,8 +24,8 @@ Our massage therapy services are personalized to meet your specific needs. All s
     </div>
     
     <div class="pricing-card featured">
-        <h3>60 Minute Massage</h3>
-        <p class="price">$95</p>
+        <h3>45 Minute Massage</h3>
+        <p class="price">$105</p>
         <p>Our most popular option. Comprehensive treatment with time to address multiple areas of concern.</p>
         <ul>
             <li>Full-body treatment</li>
@@ -35,36 +35,14 @@ Our massage therapy services are personalized to meet your specific needs. All s
     </div>
     
     <div class="pricing-card">
-        <h3>90 Minute Massage</h3>
-        <p class="price">$135</p>
+        <h3>60 Minute Massage</h3>
+        <p class="price">$125</p>
         <p>Extended session allowing for deep, thorough work and attention to multiple areas or complex issues.</p>
         <ul>
             <li>Deep relaxation</li>
             <li>Comprehensive care</li>
             <li>Enhanced healing time</li>
         </ul>
-    </div>
-</div>
-
-## Add-On Services
-
-<div class="add-ons">
-    <div class="add-on-item">
-        <h4>Hot Stone Therapy</h4>
-        <p class="add-on-price">+$15</p>
-        <p>Enhance your massage with hot stones for deeper relaxation and muscle relief.</p>
-    </div>
-    
-    <div class="add-on-item">
-        <h4>Aromatherapy</h4>
-        <p class="add-on-price">+$10</p>
-        <p>Essential oils selected to enhance your specific treatment goals.</p>
-    </div>
-    
-    <div class="add-on-item">
-        <h4>Cupping Therapy</h4>
-        <p class="add-on-price">+$20</p>
-        <p>Ancient technique to improve circulation and release fascia.</p>
     </div>
 </div>
 

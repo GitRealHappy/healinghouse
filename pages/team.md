@@ -5,15 +5,12 @@ description: Meet the experienced Registered Massage Therapists (RMTs) at Healin
 permalink: /team/
 ---
 
-# Our Experienced Therapists
-
-At Healing House, our team of Registered Massage Therapists brings years of experience and specialized training to provide you with the highest quality care.
 
 ## Meet Our Therapists
 
 <div class="team-grid">
     <div class="team-member">
-        <img src="{{ '/assets/images/milanpeters.jpeg' | relative_url }}" alt="Milan Peters, RMT at Healing House Abbotsford" class="team-photo">
+        <img src="{{ '/assets/images/team/milanpeters.jpeg' | relative_url }}" alt="Milan Peters, RMT at Healing House Abbotsford" class="team-photo">
         <h3>Milan Peters, RMT</h3>
         <p class="team-title">Founder & Senior Therapist</p>
         <div class="bio-text">
@@ -28,7 +25,7 @@ At Healing House, our team of Registered Massage Therapists brings years of expe
     </div>
     
     <div class="team-member">
-        <img src="{{ '/assets/images/sophiesarazin.jpeg' | relative_url }}" alt="Sophie Sarazin, RMT at Healing House Abbotsford" class="team-photo">
+        <img src="{{ '/assets/images/team/sophiesarazin.jpeg' | relative_url }}" alt="Sophie Sarazin, RMT at Healing House Abbotsford" class="team-photo">
         <h3>Sophie Sarazin, RMT</h3>
         <p class="team-title">Senior Therapist</p>
         <div class="bio-text">
@@ -44,7 +41,7 @@ At Healing House, our team of Registered Massage Therapists brings years of expe
     </div>
     
     <div class="team-member">
-        <img src="{{ '/assets/images/wendysanders.jpeg' | relative_url }}" alt="Wendy Sanders, RMT at Healing House Abbotsford" class="team-photo">
+        <img src="{{ '/assets/images/team/wendysanders.jpeg' | relative_url }}" alt="Wendy Sanders, RMT at Healing House Abbotsford" class="team-photo">
         <h3>Wendy Sanders, RMT</h3>
         <p class="team-title">Therapist</p>
         <div class="bio-text">
@@ -59,7 +56,7 @@ At Healing House, our team of Registered Massage Therapists brings years of expe
     </div>
 
     <div class="team-member">
-        <img src="{{ '/assets/images/katrinasawatzky.jpeg' | relative_url }}" alt="Katrina Sawatzky, RMT at Healing House Abbotsford" class="team-photo">
+        <img src="{{ '/assets/images/team/katrinasawatzky.jpeg' | relative_url }}" alt="Katrina Sawatzky, RMT at Healing House Abbotsford" class="team-photo">
         <h3>Katrina Sawatzky, RMT</h3>
         <p class="team-title">Therapist</p>
         <div class="bio-text">
