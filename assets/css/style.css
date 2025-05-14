@@ -421,6 +421,46 @@ img {
     margin-bottom: 1.5rem;
 }
 
+/* Clinic Images Section (Location Page) */
+.clinic-images-section {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column; /* Stack images by default */
+    gap: 2rem;
+}
+
+.clinic-image-item {
+    text-align: center; /* Center image and caption */
+}
+
+.clinic-image-item img {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 100%; /* Ensure responsiveness */
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.clinic-image-item .caption {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    font-style: italic;
+}
+
+/* About Brief Image (Homepage) */
+.about-image-container {
+    margin: 2rem auto; /* Center container and add vertical space */
+    max-width: 700px; /* Control max width of the image container */
+}
+
+.about-image {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: block; /* To allow margin auto to work */
+    width: 100%; /* Make image fill container */
+    height: auto;
+}
+
 /* Footer Styles */
 .site-footer {
     background-color: var(--dark-color);

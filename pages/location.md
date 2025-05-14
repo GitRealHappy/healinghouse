@@ -30,6 +30,19 @@ Healing House is conveniently located in downtown Abbotsford, with easy access t
     </div>
 </div>
 
+## A Glimpse Inside Our Clinic
+
+<div class="clinic-images-section">
+    <div class="clinic-image-item">
+        <img src="{{ '/assets/images/professional-RMT.jpeg' | relative_url }}" alt="Comfortable and professional massage therapy room at Healing House Abbotsford">
+        <p class="caption">Our professional and welcoming treatment room, designed for your comfort.</p>
+    </div>
+    <div class="clinic-image-item">
+        <img src="{{ '/assets/images/massage-treatment.jpeg' | relative_url }}" alt="Massage treatment room doorway with 'treatment in session' sign">
+        <p class="caption">Privacy and tranquility are ensured for every session.</p>
+    </div>
+</div>
+
 ## Directions
 
 ### By Car
