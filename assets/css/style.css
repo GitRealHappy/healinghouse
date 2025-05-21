@@ -105,7 +105,7 @@ img {
 }
 
 .logo {
-    height: 40px;
+    height: 50px;
     margin-right: 0.5rem;
 }
 
@@ -491,6 +491,21 @@ img {
     color: var(--secondary-color);
 }
 
+.footer-section p,
+.footer-section address,
+.footer-section ul {
+    margin-bottom: 0.75rem;
+}
+
+.footer-section ul {
+    list-style: none; /* Assuming it's already none, but good to ensure */
+    padding-left: 0; /* Remove default padding if any */
+}
+
+.footer-section li {
+    margin-bottom: 0.25rem;
+}
+
 .social-icons {
     display: flex;
     gap: 1rem;
@@ -589,7 +604,7 @@ img {
         align-items: center;
     }
     .logo {
-        height: 30px;
+        height: 40px;
     }
     .site-title {
         font-size: 1.2rem;

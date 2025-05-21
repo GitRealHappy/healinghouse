@@ -46,19 +46,18 @@ Healing House is conveniently located in downtown Abbotsford, with easy access t
 ## Directions
 
 ### By Car
-From Trans-Canada Hwy/BC-1 W
-Take Exit 90 from Trans-Canada Hwy/BC-1 W.
-Continue for 28.8 km (approximately 17 minutes).
-Continue on McCallum Rd to Matt Peters Ln
-At the roundabout, take the 1st exit onto McCallum Rd.
-Drive for 1.6 km.
-Continue onto Essendene Ave.
-Drive for 200 m.
-Turn left onto Montrose Ave.
-Drive for 81 m.
-Turn left onto Matt Peters Ln.
-Drive for 27 m.
-Healing House will be on the right.
+1. From Trans-Canada Hwy/BC-1 W, take Exit 90.
+2. Continue for 28.8 km (approximately 17 minutes).
+3. Continue on McCallum Rd towards Matt Peters Ln.
+4. At the roundabout, take the 1st exit onto McCallum Rd.
+5. Drive for 1.6 km.
+6. Continue onto Essendene Ave.
+7. Drive for 200 m.
+8. Turn left onto Montrose Ave.
+9. Drive for 81 m.
+10. Turn left onto Matt Peters Ln.
+11. Drive for 27 m.
+12. Healing House will be on the right.
 
 ### By Public Transit
 - Several bus routes stop within a 5-minute walk of our clinic

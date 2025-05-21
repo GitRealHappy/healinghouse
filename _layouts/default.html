@@ -31,27 +31,43 @@
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday"
-          ],
+          "dayOfWeek": "Tuesday",
           "opens": "09:00",
-          "closes": "19:00"
+          "closes": "21:00"
         },
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Saturday",
+          "dayOfWeek": "Wednesday",
+          "opens": "09:00",
+          "closes": "16:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Thursday",
+          "opens": "09:00",
+          "closes": "21:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Friday"
+          // No opens/closes means closed, or use "opens": "00:00", "closes": "00:00" if preferred by schema validator
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday"
+          // No opens/closes means closed
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
           "opens": "10:00",
           "closes": "17:00"
         },
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Sunday",
-          "opens": "00:00", // Or mark as closed if possible, some schemas vary
-          "closes": "00:00" // Or simply omit Sunday if it's always closed
+          "dayOfWeek": "Monday",
+          "opens": "09:00",
+          "closes": "17:00"
         }
       ],
       "priceRange" : "$$" // Optional: General price range (e.g., $, $$, $$$)
