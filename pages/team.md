@@ -21,7 +21,7 @@ permalink: /team/
             <button class="read-more-btn" aria-expanded="false">Read More</button>
         </div>
         <p class="specialties"><strong>Specialties:</strong> Deep Tissue, Myofascial Release, Sports Massage</p>
-        <a href="https://healinghouseabbotsford.janeapp.com/" target="_blank" class="cta-button team-book-button">Book with Milan</a>
+        <a href="https://healinghouseabbotsford.janeapp.com/#/staff_member/16" target="_blank" class="cta-button team-book-button">Book with Milan</a>
     </div>
     
     <div class="team-member">
@@ -37,7 +37,7 @@ permalink: /team/
             <button class="read-more-btn" aria-expanded="false">Read More</button>
         </div>
         <p class="specialties"><strong>Specialties:</strong> Pre/Post-Natal, Postural Dysfunction, Stress Relief</p>
-        <a href="https://healinghouseabbotsford.janeapp.com/" target="_blank" class="cta-button team-book-button">Book with Sophie</a>
+        <a href="https://healinghouseabbotsford.janeapp.com/#/staff_member/18" target="_blank" class="cta-button team-book-button">Book with Sophie</a>
     </div>
     
     <div class="team-member">
@@ -52,7 +52,7 @@ permalink: /team/
             <button class="read-more-btn" aria-expanded="false">Read More</button>
         </div>
         <p class="specialties"><strong>Specialties:</strong> Injury Rehab, Stress Reduction, Pre/Post-Natal Care</p>
-        <a href="https://healinghouseabbotsford.janeapp.com/" target="_blank" class="cta-button team-book-button">Book with Wendy</a>
+        <a href="https://healinghouseabbotsford.janeapp.com/#/staff_member/4" target="_blank" class="cta-button team-book-button">Book with Wendy</a>
     </div>
 
     <div class="team-member">
@@ -67,7 +67,7 @@ permalink: /team/
             <button class="read-more-btn" aria-expanded="false">Read More</button>
         </div>
         <p class="specialties"><strong>Specialties:</strong> Relaxation, Therapeutic Massage (Placeholder - update as needed)</p>
-        <a href="https://healinghouseabbotsford.janeapp.com/" target="_blank" class="cta-button team-book-button">Book with Katrina</a>
+        <a href="https://healinghouseabbotsford.janeapp.com/#/staff_member/9" target="_blank" class="cta-button team-book-button">Book with Katrina</a>
     </div>
 </div>
 

@@ -147,10 +147,13 @@ All content pages use the page.html layout and follow a consistent structure:
 ## Design Decisions
 
 1. **Color Scheme:**
-   - Primary: #4a7c59 (Green - represents healing and nature)
-   - Secondary: #c9e4ca (Light green - softer complement to primary)
-   - Accent: #f9c784 (Warm yellow - for CTAs and highlights)
-   - Text: #333333 (Dark gray - for readability)
+   - Primary: #8A6552 (Rich warm brown - primary brand color)
+   - Secondary: #D2C4B5 (Soft taupe - secondary elements)
+   - Accent: #C19277 (Warm terracotta - accent/CTA elements)
+   - Text: #3E332E (Deep brown - main text)
+   - Light: #F9F6F2 (Warm off-white - backgrounds)
+   - Dark: #2D2420 (Dark chocolate - footer, dark areas)
+   - Gray: #EDE8E2 (Cream/beige - light backgrounds)
 
 2. **Typography:**
    - Main Font: Montserrat (sans-serif for clean, modern look)
