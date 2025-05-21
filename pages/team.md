@@ -5,6 +5,9 @@ description: Meet the experienced Registered Massage Therapists (RMTs) at Healin
 permalink: /team/
 ---
 
+## Our Approach
+
+Our therapists tailor each session to your specific needs, taking the time to understand your concerns, health history, and goals. We believe that massage therapy is not just about addressing pain points but about promoting overall wellness and balance in your life.
 
 ## Meet Our Therapists
 
@@ -71,10 +74,24 @@ permalink: /team/
     </div>
 </div>
 
-## Our Approach
+## Energy Healing & Somatic Support
 
-Our therapists tailor each session to your specific needs, taking the time to understand your concerns, health history, and goals. We believe that massage therapy is not just about addressing pain points but about promoting overall wellness and balance in your life.
-
-All our therapists are licensed Registered Massage Therapists and maintain ongoing professional development to stay current with the latest techniques and research in the field.
+<div class="team-grid">
+    <div class="team-member">
+        <img src="{{ '/assets/images/team/lauraanctil.jpeg' | relative_url }}" alt="Laura Anctil, Certified Usui Reiki Master at Healing House Abbotsford" class="team-photo">
+        <h3>Laura Anctil, MA, CLBD</h3>
+        <p class="team-title">Certified Usui Reiki Master & Ritual Practitioner</p>
+        <div class="bio-text">
+            <p class="bio-intro">Hi! I'm Laura (she/they) and I identify as a white, queer womxn of Italian and Celtic ancestry, currently residing on Stó:lō unceded land, the traditional territory of the Semá:th and Mathxwí First Nations.<span class="dots">...</span></p>
+            <div class="more-text">
+                <p>I'm a Certified Usui Reiki Master and Ritual Practitioner, and a member of the International Association of Reiki Practitioners. I'm also a Certified Birth and Labour Doula and trauma-informed secondary support for Psychedelic Assisted Psychotherapy. I'm passionate about companioning others on their journey with somatic presencing, compassionate witnessing, and unconditional positive regard. I'm also deeply invested in learning about anti-racist and anti-oppressive ways of being, and cultivating right relationship with our planet and its inhabitants.</p>
+                <p>Before learning energy work, I completed an MA in Cultural, Social and Political Thought, and this training taught me to view healing from a holistic and systemic perspective. I strongly believe that reconnection with the body is an important step to reconciliation and learning healthy reconnection with all O/others. On my days off, I like magikal adventures in the woods with family, friends and familiars; singing loudly while driving, playing in different bands, poring over ancient and contemporary texts, and tending to my outdoor garden sanctuary.</p>
+            </div>
+            <button class="read-more-btn" aria-expanded="false">Read More</button>
+        </div>
+        <p class="specialties"><strong>Modalities:</strong> Usui Reiki, Ritual Practice, Somatic Presencing, Compassionate Witnessing, Birth & Labour Doula Support, Trauma-Informed Psychedelic Assisted Psychotherapy Support</p>
+        <a href="https://healinghouseabbotsford.janeapp.com/#/staff_member/14" target="_blank" class="cta-button team-book-button">Book with Laura</a>
+    </div>
+</div>
 
 {% include book-cta.html %} 

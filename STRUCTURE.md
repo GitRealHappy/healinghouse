@@ -119,6 +119,7 @@ All content pages use the page.html layout and follow a consistent structure:
 - Displays profiles of Registered Massage Therapists.
 - Features collapsible therapist bios with "Read More" / "Read Less" functionality for improved readability and engagement.
 - Each therapist profile includes a photo, title, detailed bio (expandable), list of specialties, and an individual "Book Now" button linking to the Jane App.
+- Includes a separate section for other practitioners, such as Certified Usui Reiki Masters, with similar profile structure (photo, title, bio, specialties, booking link).
 - Uses a responsive grid layout for team member cards.
 
 ### Location Page
