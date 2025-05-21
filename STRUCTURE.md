@@ -54,7 +54,7 @@ The `_config.yml` file contains the site configuration including:
 
 1. **default.html**: The main layout template used by all pages, containing:
    - Head section with meta tags and CSS
-   - Google Fonts integration for Montserrat
+   - Google Fonts integration for Montserrat and Amatic SC
    - Header include
    - Main content area
    - Footer include
@@ -67,15 +67,18 @@ The `_config.yml` file contains the site configuration including:
 ### Includes (Reusable Components)
 
 1. **header.html**: Site navigation with:
-   - Logo and site name
+   - Logo and site name (site title uses Amatic SC font)
    - Responsive navigation menu with clean URLs
    - "Book Now" CTA button linking to Jane App
-   - Mobile-friendly hamburger menu with touch support
+   - Mobile-friendly hamburger menu activated at 850px viewport width:
+     - Slides from top on smaller mobile screens (<= 600px)
+     - Slides from right on tablet screens (601px - 850px)
+   - JavaScript for menu toggle simplified to rely on CSS `:checked` state.
 
 2. **footer.html**: Site footer with:
    - Contact information
-   - Business hours
-   - Social media links
+   - Business hours (recently updated)
+   - Clinic logo display
    - Copyright notice with dynamic year
 
 3. **book-cta.html**: Reusable call-to-action component with:
@@ -85,10 +88,14 @@ The `_config.yml` file contains the site configuration including:
 ### Stylesheets
 
 The CSS is organized with:
-- CSS variables for consistent styling (colors, fonts)
+- CSS variables for consistent styling (colors, fonts, including Amatic SC for site title)
 - Mobile-first responsive design
 - Modular components with specific styling (e.g., header, footer, services cards, team member cards)
-- Media queries for different device sizes
+- Media queries for different device sizes, including:
+  - Hamburger menu activation at <= 850px
+  - Specific mobile menu animation at <= 600px (slide from top)
+  - Specific tablet menu animation between 601px - 850px (slide from right)
+  - Adjustments for full navigation on tablets between 851px - 966px
 - Responsive map container for Google Maps
 - Landscape mode optimizations
 - Overflow control to prevent horizontal scrolling
@@ -117,22 +124,28 @@ All content pages use the page.html layout and follow a consistent structure:
 ### Location Page
 - Address information
 - Responsive Google Maps embed
-- Directions and parking information
+- Directions (driving directions formatted as an ordered list) and parking information
 
 ## Navigation Structure
 
 - **Main Navigation:** Home, The Team, Pricing, Location, Policies
 - **Book Now Button:** Present in header and as CTAs throughout the site
-- **Footer Links:** Contact info, business hours, social media
-- **Mobile Navigation:** Hamburger menu with improved touch support
+- **Footer Links:** Contact info, business hours, clinic logo
+- **Mobile Navigation:** Hamburger menu activated at 850px.
+  - Slides from top on screens <= 600px.
+  - Slides from right on screens between 601px - 850px.
+  - JavaScript toggle relies on CSS `:checked` state for visual changes.
 
 ## Mobile Optimizations
 
 1. **Responsive Navigation:**
-   - Touch-friendly hamburger menu
-   - Proper event handling for mobile devices
-   - Landscape mode support
-   - Improved visibility and accessibility
+   - Touch-friendly hamburger menu activated at 850px.
+   - Menu animation:
+     - Slides from top on mobile screens (<= 600px).
+     - Slides from right on tablet screens (601px - 850px).
+   - JavaScript event handling simplified to CSS `:checked` state.
+   - Landscape mode support (primarily handled by breakpoint adjustments).
+   - Improved visibility and accessibility.
 
 2. **Responsive Maps:**
    - Aspect ratio-based responsive container
@@ -157,13 +170,18 @@ All content pages use the page.html layout and follow a consistent structure:
 
 2. **Typography:**
    - Main Font: Montserrat (sans-serif for clean, modern look)
+   - Site Title Font: Amatic SC (cursive, for a distinct brand feel in the header)
    - Headings: Bold weight for emphasis
    - Body: Regular weight for readability
 
 3. **Responsive Design:**
    - Mobile-first approach
-   - Breakpoints at 768px for tablet and 900px for landscape
-   - Collapsible navigation menu on mobile
+   - Key Breakpoints:
+     - Full navigation with minor adjustments: 851px - 966px
+     - Hamburger menu activation: <= 850px
+     - Tablet-specific menu animation (slide from right): 601px - 850px
+     - Mobile-specific menu animation (slide from top): <= 600px
+   - Collapsible navigation menu on mobile/tablet screens.
    - Flexible grid layouts that adapt to screen size
    - Use of collapsible sections (e.g., team member bios) for better content management on smaller screens and reduced initial information overload.
 
