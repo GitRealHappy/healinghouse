@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     navLinkElements.forEach(link => {
         const linkPath = link.getAttribute('href');
-        if (currentLocation.includes(linkPath) && linkPath !== '/') {
+        if (currentLocation.startsWith(linkPath) && linkPath !== '/') {
             link.classList.add('active');
         } else if (currentLocation === '/' && linkPath === '/') {
             link.classList.add('active');
@@ -31,54 +31,27 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Mobile menu toggle
     const navToggle = document.getElementById('nav-toggle');
-    const navLinksContainer = document.querySelector('.nav-links');
     const navToggleLabel = document.querySelector('.nav-toggle-label');
     
-    // Fix for mobile devices - add touch event to hamburger menu
-    if (navToggleLabel) {
+    if (navToggleLabel && navToggle) {
         navToggleLabel.addEventListener('click', function(e) {
             e.preventDefault();
             e.stopPropagation();
-            
-            if (navToggle) {
-                navToggle.checked = !navToggle.checked;
-                
-                if (navToggle.checked) {
-                    navLinksContainer.style.transform = 'translateY(0)';
-                    navLinksContainer.style.opacity = '1';
-                    navLinksContainer.style.visibility = 'visible';
-                } else {
-                    navLinksContainer.style.transform = 'translateY(-150%)';
-                    navLinksContainer.style.opacity = '0';
-                    navLinksContainer.style.visibility = 'hidden';
-                }
-            }
+            navToggle.checked = !navToggle.checked;
         });
     }
     
+    // The 'change' event on navToggle is implicitly handled by CSS's :checked selector.
+    // No separate JS listener for 'change' on navToggle is needed for visual styles if CSS handles it.
+
+    // Close menu when clicking outside (if navToggle exists)
     if (navToggle) {
-        navToggle.addEventListener('change', function() {
-            if (this.checked) {
-                navLinksContainer.style.transform = 'translateY(0)';
-                navLinksContainer.style.opacity = '1';
-                navLinksContainer.style.visibility = 'visible';
-            } else {
-                navLinksContainer.style.transform = 'translateY(-150%)';
-                navLinksContainer.style.opacity = '0';
-                navLinksContainer.style.visibility = 'hidden';
-            }
-        });
-        
-        // Close menu when clicking outside
         document.addEventListener('click', function(e) {
             const isNavLinks = e.target.closest('.nav-links');
             const isNavToggleLabel = e.target.closest('.nav-toggle-label');
             
             if (!isNavLinks && !isNavToggleLabel && navToggle.checked) {
                 navToggle.checked = false;
-                navLinksContainer.style.transform = 'translateY(-150%)';
-                navLinksContainer.style.opacity = '0';
-                navLinksContainer.style.visibility = 'hidden';
             }
         });
     }
@@ -91,13 +64,13 @@ document.addEventListener('DOMContentLoaded', function() {
             const bioTextDiv = this.closest('.bio-text');
             if (bioTextDiv) {
                 const moreTextDiv = bioTextDiv.querySelector('.more-text');
-                const dotsSpan = bioTextDiv.querySelector('.bio-intro .dots'); // Make selector more specific
+                const dotsSpan = bioTextDiv.querySelector('.bio-intro .dots');
 
                 if (moreTextDiv) {
                     moreTextDiv.classList.toggle('expanded');
                     const isExpanded = moreTextDiv.classList.contains('expanded');
                     this.textContent = isExpanded ? 'Read Less' : 'Read More';
-                    this.setAttribute('aria-expanded', isExpanded); // Update accessibility attribute
+                    this.setAttribute('aria-expanded', isExpanded);
                     if (dotsSpan) {
                         dotsSpan.style.display = isExpanded ? 'none' : 'inline';
                     }
