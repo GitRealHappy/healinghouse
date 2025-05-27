@@ -14,18 +14,15 @@ Healing House is conveniently located in downtown Abbotsford, with easy access t
 <div class="location-container">
     <div class="address-container">
         <address>
-            <strong>Healing House Massage Therapy</strong><br>
             2633 Montrose Ave B<br>
             Abbotsford, BC V2S 3T5<br>
             Canada<br><br>
-            <strong>Phone:</strong> (604) 308-2437<br>
-            <strong>Email:</strong> healinghouseabbotsford@gmail.com
         </address>
     </div>
     
     <div class="map-container">
         <div class="responsive-map">
-           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186.8422670277031!2d-122.29098256677389!3d49.04975450363116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xae3de8fe0a16b29d%3A0xdc8d4ecb1920e268!2sHealing%20House%20Massage%20and%20Wellness!5e1!3m2!1sen!2sca!4v1746554976887!5m2!1sen!2sca"></iframe>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186.8422670277031!2d-122.29098256677389!3d49.04975450363116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xae3de8fe0a16b29d%3A0xdc8d4ecb1920e268!2sHealing%20House%20Massage%20and%20Wellness!5e0!3m2!1sen!2sca!4v1746554976887!5m2!1sen!2sca"></iframe>
         </div>
     </div>
 </div>

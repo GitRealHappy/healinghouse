@@ -665,7 +665,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 
 .address-container {
