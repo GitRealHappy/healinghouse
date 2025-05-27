@@ -54,16 +54,15 @@ Healing House is conveniently located in downtown Abbotsford, with easy access t
 6. Continue onto Essendene Ave.
 7. Drive for 200 m.
 8. Turn left onto Montrose Ave.
-9. Drive for 81 m.
-10. Turn left onto Matt Peters Ln.
-11. Drive for 27 m.
-12. Healing House will be on the right.
+9. Find parking.
+10. Walk down Matt Peters Ln.
+11. Healing House will be on the right.
 
 ### By Public Transit
 - Several bus routes stop within a 5-minute walk of our clinic
 
 ## Parking
 
-Parking is available down Matt Peters Ln. for clients. Additional street parking and nearby public parking lots are also available within a short walking distance.
+Street parking and nearby public parking lots are available within a short walking distance.
 
 {% include book-cta.html %} 

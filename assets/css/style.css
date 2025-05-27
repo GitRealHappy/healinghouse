@@ -187,6 +187,19 @@ img {
     margin-bottom: 0.5rem;
 }
 
+/* Mobile responsive hero text */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.75rem;
+    }
+}
+
 .hero h2 {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
@@ -233,6 +246,7 @@ img {
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s;
+    text-align: center;
 }
 
 .service-card:hover {
@@ -242,6 +256,78 @@ img {
 .service-card h3 {
     color: var(--primary-color);
     margin-bottom: 1rem;
+}
+
+.service-card p {
+    margin-bottom: 1rem;
+}
+
+/* RMT Info Section in Service Card */
+.rmt-info {
+    margin-top: 1rem;
+}
+
+.rmt-info-btn {
+    background: var(--gray-color);
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0.75rem 1rem;
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.rmt-info-btn::after {
+    content: " ▼";
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.rmt-info-btn[aria-expanded="true"]::after {
+    transform: rotate(180deg);
+}
+
+.rmt-info-btn:hover {
+    background: var(--primary-color);
+    color: var(--light-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rmt-expanded-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.rmt-expanded-content.expanded {
+    max-height: 1000px;
+}
+
+.rmt-expanded-content h4 {
+    color: var(--primary-color);
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+}
+
+.rmt-expanded-content ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.rmt-expanded-content li {
+    margin-bottom: 0.25rem;
+    line-height: 1.4;
 }
 
 /* About Section */
@@ -433,10 +519,11 @@ img {
 
 /* Clinic Images Section (Location Page) */
 .clinic-images-section {
-    margin: 2rem 0;
+    margin: 6rem 0 2rem 0; /* Increased top margin to prevent overlap */
     display: flex;
     flex-direction: column; /* Stack images by default */
     gap: 2rem;
+    clear: both; /* Ensure it clears any floating elements */
 }
 
 .clinic-image-item {
@@ -556,11 +643,24 @@ img {
     font-size: 2.5rem;
 }
 
+/* Mobile responsive page title */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-title {
+        font-size: 1.75rem;
+    }
+}
+
 .page-body {
     line-height: 1.8;
 }
 
-/* Map Styles */
+/* Location Page Styles */
 .location-container {
     display: flex;
     flex-wrap: wrap;
@@ -571,6 +671,21 @@ img {
 .address-container {
     flex: 1;
     min-width: 250px;
+    background-color: var(--gray-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.address-container address {
+    font-style: normal;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+.address-container address strong {
+    color: var(--primary-color);
+    font-weight: 600;
 }
 
 .map-container {
@@ -583,6 +698,9 @@ img {
     padding-bottom: 75%; /* 4:3 Aspect Ratio */
     height: 0;
     overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem; /* Add space below map */
 }
 
 .responsive-map iframe {
@@ -592,6 +710,155 @@ img {
     width: 100%;
     height: 100%;
     border: 0;
+    border-radius: 8px;
+}
+
+/* Directions Section Styling */
+.page-content h3 {
+    color: var(--primary-color);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.page-content ol {
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+    padding-left: 0.5rem;
+}
+
+.page-content ol li {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.page-content ul {
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+    padding-left: 0.5rem;
+}
+
+.page-content ul li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+/* Parking Section */
+.page-content h2 + p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* Mobile Responsive Improvements for Location Page */
+@media (max-width: 768px) {
+    .location-container {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin: 1.5rem 0;
+    }
+    
+    .address-container {
+        min-width: unset;
+        padding: 1.5rem;
+    }
+    
+    .map-container {
+        min-width: unset;
+        margin-bottom: 6rem; /* Increase margin for tablet/mobile */
+    }
+    
+    .responsive-map {
+        padding-bottom: 60%; /* Adjust aspect ratio for mobile */
+        margin-bottom: 0; /* Remove margin from responsive-map */
+    }
+    
+    .page-content ol,
+    .page-content ul {
+        margin-left: 1rem;
+        padding-left: 0.5rem;
+    }
+    
+    .page-content ol li,
+    .page-content ul li {
+        margin-bottom: 1rem;
+        padding-right: 0.5rem;
+    }
+    
+    /* Target the heading that comes after the location container */
+    .location-container + h2 {
+        margin-top: 6rem; /* Extra top margin on tablet/mobile to prevent overlap */
+    }
+}
+
+@media (max-width: 480px) {
+    .page-content {
+        padding: 2rem 0.75rem; /* Reduce horizontal padding on very small screens */
+    }
+    
+    .location-container {
+        margin: 1rem 0; /* Reduce margin to prevent overflow */
+    }
+    
+    .address-container {
+        padding: 1rem;
+        margin: 0; /* Ensure no additional margin */
+    }
+    
+    .map-container {
+        margin: 0 0 9rem 0; /* Add bottom margin to container */
+    }
+    
+    .responsive-map {
+        margin-bottom: 0; /* Remove margin from responsive-map */
+    }
+    
+    .page-content ol,
+    .page-content ul {
+        margin-left: 0.75rem;
+        padding-left: 0.25rem;
+    }
+    
+    .page-content h3 {
+        font-size: 1.2rem;
+        margin-top: 2rem;
+    }
+    
+    /* Target the heading that comes after the location container */
+    .location-container + h2 {
+        margin-top: 8rem; /* Extra top margin on mobile to prevent overlap */
+    }
+}
+
+/* Extra small screens - prevent any overflow */
+@media (max-width: 360px) {
+    .page-content {
+        padding: 2rem 0.5rem; /* Even less padding for very narrow screens */
+    }
+    
+    .location-container {
+        margin: 0.75rem 0;
+        gap: 1rem;
+    }
+    
+    .address-container {
+        padding: 0.75rem;
+    }
+    
+    .map-container {
+        margin-bottom: 7rem; /* Increase margin for extra small screens to override previous values */
+    }
+    
+    .responsive-map {
+        margin-bottom: 0; /* Remove margin from responsive-map */
+    }
+    
+    /* Target the heading that comes after the location container */
+    .location-container + h2 {
+        margin-top: 10rem; /* Maximum top margin for extra small screens */
+    }
 }
 
 /* Mobile navigation styles (hamburger menu) */

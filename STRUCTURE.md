@@ -16,27 +16,32 @@ This document provides an overview of the Healing House website architecture, co
 ```
 healinghouse/
 ├── _config.yml            # Jekyll configuration
-├── _data/                 # Data files (business hours, services)
+├── _data/                 # Data files (currently unused, reserved for future data)
 ├── _includes/             # Reusable components
 │   ├── header.html        # Navigation header
-│   ├── footer.html        # Footer
+│   ├── footer.html        # Footer with flexible hours
 │   └── book-cta.html      # Book Now CTA component
 ├── _layouts/              # Page templates
-│   ├── default.html       # Main template 
+│   ├── default.html       # Main template with enhanced meta tags
 │   └── page.html          # Content page template
 ├── assets/                # Static assets
-│   ├── css/               # Stylesheets
-│   ├── js/                # JavaScript files
-│   └── images/            # Images and logo
+│   ├── css/
+│   │   └── style.css      # Main stylesheet with responsive design
+│   ├── js/
+│   │   └── main.js        # JavaScript for navigation and expandable content
+│   └── images/            # Images and logos
 ├── pages/                 # Site pages
-│   ├── team.md            # The Team page
-│   ├── pricing.md         # Pricing and hours
-│   ├── location.md        # Location information
+│   ├── team.md            # The Team page with collapsible bios
+│   ├── pricing.md         # Restructured pricing for RMT and Reiki/Somatics
+│   ├── location.md        # Location with enhanced mobile design
 │   └── policies.md        # Clinic policies
-├── index.html             # Homepage
+├── index.html             # Homepage with expandable RMT info
 ├── 404.html               # Custom 404 error page
 ├── CNAME                  # Custom domain configuration
 ├── README.md              # Project information
+├── robots.txt             # Search engine directives
+├── Gemfile                # Ruby dependencies
+├── Gemfile.lock           # Locked dependency versions
 └── STRUCTURE.md           # This file
 ```
 
@@ -77,7 +82,7 @@ The `_config.yml` file contains the site configuration including:
 
 2. **footer.html**: Site footer with:
    - Contact information
-   - Business hours (recently updated)
+   - Flexible hours message ("Hours may vary. Please check online for your therapist's availability")
    - Clinic logo display
    - Copyright notice with dynamic year
 
@@ -96,16 +101,21 @@ The CSS is organized with:
   - Specific mobile menu animation at <= 600px (slide from top)
   - Specific tablet menu animation between 601px - 850px (slide from right)
   - Adjustments for full navigation on tablets between 851px - 966px
-- Responsive map container for Google Maps
+- Responsive map container for Google Maps with enhanced mobile spacing
+- Location page specific styling with progressive mobile margins
 - Landscape mode optimizations
 - Overflow control to prevent horizontal scrolling
-- Styles for collapsible content sections (e.g., team bios)
+- Styles for collapsible content sections (e.g., team bios, RMT info on homepage)
+- Enhanced button styling for expandable content with visual indicators
 
 ## Page Structure
 
 ### Homepage (index.html)
 - Hero section with main CTA
-- Services overview
+- Services overview with three service cards:
+  - Registered Massage Therapy (with expandable "What is RMT?" section)
+  - Certified Usui Master Reiki
+  - Pathweaving
 - Brief about section
 - Book Now CTA
 
@@ -122,10 +132,19 @@ All content pages use the page.html layout and follow a consistent structure:
 - Includes a separate section for other practitioners, such as Certified Usui Reiki Masters, with similar profile structure (photo, title, bio, specialties, booking link).
 - Uses a responsive grid layout for team member cards.
 
-### Location Page
-- Address information
-- Responsive Google Maps embed
+### Pricing Page (pages/pricing.md)
+- Restructured into two main sections:
+  - Registered Massage Therapy Pricing (30, 45, 60, 75, 90 minute options)
+  - Certified Usui Master Reiki & Somatics (Reiki and Pathweaving pricing)
+- Insurance and payment information
+- Flexible availability messaging
+
+### Location Page (pages/location.md)
+- Address information with enhanced styling
+- Responsive Google Maps embed with improved mobile spacing
+- Clinic interior images section
 - Directions (driving directions formatted as an ordered list) and parking information
+- Enhanced mobile responsive design to prevent content overlap
 
 ## Navigation Structure
 
@@ -213,6 +232,30 @@ To add a new page to the website:
 3. Add your content using Markdown and HTML as needed
 4. Add a link to the page in the navigation menu (_includes/header.html)
 
+## Recent Enhancements
+
+Recent improvements made to the website:
+
+1. **Enhanced Mobile Experience:**
+   - Fixed map overlap issues on location page with progressive margin system
+   - Improved responsive design for narrow mobile screens
+   - Enhanced page title sizing for mobile devices
+
+2. **Content Improvements:**
+   - Added expandable "What is RMT?" section on homepage with comprehensive condition list
+   - Restructured pricing page with separate RMT and Reiki/Somatics sections
+   - Updated footer to use flexible hours messaging instead of fixed schedule
+
+3. **Interactive Features:**
+   - Enhanced expandable content buttons with visual indicators (arrows, hover effects)
+   - Improved JavaScript functionality for multiple expandable sections
+   - Better accessibility with proper ARIA attributes
+
+4. **Styling Enhancements:**
+   - Service cards now have centered text alignment
+   - Enhanced button styling with background colors, borders, and animations
+   - Improved spacing and typography throughout
+
 ## Future Enhancements
 
 Potential future improvements for the website:
@@ -224,4 +267,5 @@ Potential future improvements for the website:
 5. Additional service detail pages
 6. Social media feed integration
 7. Accessibility improvements (ARIA attributes, keyboard navigation)
-8. Performance optimizations (image lazy loading, critical CSS) 
+8. Performance optimizations (image lazy loading, critical CSS)
+9. Utilize _data directory for structured content management 

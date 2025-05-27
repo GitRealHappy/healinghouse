@@ -56,11 +56,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Read More functionality for Team Bios
+    // Read More functionality for Team Bios and RMT Info
     const readMoreButtons = document.querySelectorAll('.read-more-btn');
 
     readMoreButtons.forEach(button => {
         button.addEventListener('click', function() {
+            // Handle team bio read more
             const bioTextDiv = this.closest('.bio-text');
             if (bioTextDiv) {
                 const moreTextDiv = bioTextDiv.querySelector('.more-text');
@@ -74,6 +75,19 @@ document.addEventListener('DOMContentLoaded', function() {
                     if (dotsSpan) {
                         dotsSpan.style.display = isExpanded ? 'none' : 'inline';
                     }
+                }
+            }
+            
+            // Handle RMT info read more
+            const rmtInfoDiv = this.closest('.rmt-info');
+            if (rmtInfoDiv) {
+                const moreTextDiv = rmtInfoDiv.querySelector('.rmt-expanded-content');
+
+                if (moreTextDiv) {
+                    moreTextDiv.classList.toggle('expanded');
+                    const isExpanded = moreTextDiv.classList.contains('expanded');
+                    this.textContent = isExpanded ? 'Show Less' : 'What is Registered Massage Therapy?';
+                    this.setAttribute('aria-expanded', isExpanded);
                 }
             }
         });

@@ -15,7 +15,7 @@ Our therapists tailor each session to your specific needs, taking the time to un
     <div class="team-member">
         <img src="{{ '/assets/images/team/milanpeters.jpeg' | relative_url }}" alt="Milan Peters, RMT at Healing House Abbotsford" class="team-photo">
         <h3>Milan Peters, RMT</h3>
-        <p class="team-title">Founder & Senior Therapist</p>
+        <p class="team-title">Founder & Registered Massage Therapist</p>
         <div class="bio-text">
             <p class="bio-intro">Milan Peters graduated from the Registered Massage Therapy program at CDI College in 2019. She brings a holistic approach to treatment aware of the interconnectedness of the body and mind.<span class="dots">...</span></p>
             <div class="more-text">
@@ -23,14 +23,13 @@ Our therapists tailor each session to your specific needs, taking the time to un
             </div>
             <button class="read-more-btn" aria-expanded="false">Read More</button>
         </div>
-        <p class="specialties"><strong>Specialties:</strong> Deep Tissue, Myofascial Release, Sports Massage</p>
         <a href="https://healinghouseabbotsford.janeapp.com/#/staff_member/16" target="_blank" class="cta-button team-book-button">Book with Milan</a>
     </div>
     
     <div class="team-member">
         <img src="{{ '/assets/images/team/sophiesarazin.jpeg' | relative_url }}" alt="Sophie Sarazin, RMT at Healing House Abbotsford" class="team-photo">
         <h3>Sophie Sarazin, RMT</h3>
-        <p class="team-title">Senior Therapist</p>
+        <p class="team-title">Registered Massage Therapist</p>
         <div class="bio-text">
             <p class="bio-intro">Sophie began her career as a body worker in Ontario after graduating from the College of Orthotherapy program in 2005. Since then, she has worked in five-star Hotel spas in Ontario, Quebec and Vancouver.<span class="dots">...</span></p>
             <div class="more-text">
@@ -39,14 +38,13 @@ Our therapists tailor each session to your specific needs, taking the time to un
             </div>
             <button class="read-more-btn" aria-expanded="false">Read More</button>
         </div>
-        <p class="specialties"><strong>Specialties:</strong> Pre/Post-Natal, Postural Dysfunction, Stress Relief</p>
         <a href="https://healinghouseabbotsford.janeapp.com/#/staff_member/18" target="_blank" class="cta-button team-book-button">Book with Sophie</a>
     </div>
     
     <div class="team-member">
         <img src="{{ '/assets/images/team/wendysanders.jpeg' | relative_url }}" alt="Wendy Sanders, RMT at Healing House Abbotsford" class="team-photo">
         <h3>Wendy Sanders, RMT</h3>
-        <p class="team-title">Therapist</p>
+        <p class="team-title">Registered Massage Therapist</p>
         <div class="bio-text">
             <p class="bio-intro">Wendy Sanders is a Registered Massage Therapist with more than 15 yrs experience. She grew up in North Vancouver and moved to Abbotsford with her young family a few years ago.<span class="dots">...</span></p>
             <div class="more-text">
@@ -54,14 +52,13 @@ Our therapists tailor each session to your specific needs, taking the time to un
             </div>
             <button class="read-more-btn" aria-expanded="false">Read More</button>
         </div>
-        <p class="specialties"><strong>Specialties:</strong> Injury Rehab, Stress Reduction, Pre/Post-Natal Care</p>
         <a href="https://healinghouseabbotsford.janeapp.com/#/staff_member/4" target="_blank" class="cta-button team-book-button">Book with Wendy</a>
     </div>
 
     <div class="team-member">
         <img src="{{ '/assets/images/team/katrinasawatzky.jpeg' | relative_url }}" alt="Katrina Sawatzky, RMT at Healing House Abbotsford" class="team-photo">
         <h3>Katrina Sawatzky, RMT</h3>
-        <p class="team-title">Therapist</p>
+        <p class="team-title">Registered Massage Therapist</p>
         <div class="bio-text">
             <p class="bio-intro">Katrina has been a RMT for 10 years. The way she combines relaxation massage to relieve stress, with specific massage techniques to problem areas, results in an enjoyable yet effective treatment.<span class="dots">...</span></p>
             <div class="more-text">
@@ -69,7 +66,6 @@ Our therapists tailor each session to your specific needs, taking the time to un
             </div>
             <button class="read-more-btn" aria-expanded="false">Read More</button>
         </div>
-        <p class="specialties"><strong>Specialties:</strong> Relaxation, Therapeutic Massage (Placeholder - update as needed)</p>
         <a href="https://healinghouseabbotsford.janeapp.com/#/staff_member/9" target="_blank" class="cta-button team-book-button">Book with Katrina</a>
     </div>
 </div>

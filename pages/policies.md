@@ -16,10 +16,10 @@ At Healing House, we strive to provide the best possible care in a comfortable a
     <p>We recommend booking appointments in advance to secure your preferred time and therapist. Appointments can be booked online through our booking system, by phone, or in person.</p>
     
     <h3>Cancellations & Rescheduling</h3>
-    <p>We require 24 hours' notice for all cancellations or rescheduling. This allows us to offer the appointment time to another client.</p>
+    <p>Cancellations with less than 24 hours notice and missed appointments without notice may be subject to a fee of up to 100% of the treatment cost.</p>
     
     <h3>Late Cancellations</h3>
-    <p>Cancellations with less than 24 hours' notice may be subject to a fee of 50% of the scheduled service.</p>
+    <p>Cancellations with less than 24 hours' notice may be subject to a fee.</p>
     
     <h3>No-Shows</h3>
     <p>Missed appointments without notice will be subject to a fee of 100% of the scheduled service.</p>
@@ -45,7 +45,7 @@ At Healing House, we strive to provide the best possible care in a comfortable a
     <p>Please provide accurate health information and inform us of any changes to your health status. This ensures your treatment is safe and effective.</p>
     
     <h3>Illness Policy</h3>
-    <p>For the health and safety of our staff and other clients, please reschedule your appointment if you are experiencing symptoms of contagious illness. We will waive cancellation fees for illness-related cancellations.</p>
+    <p>For the health and safety of our staff and other clients, please reschedule your appointment if you are experiencing symptoms of contagious illness.</p>
     
     <h3>Hygiene</h3>
     <p>We maintain high standards of cleanliness and sanitization. We ask that clients arrive for their appointments with proper hygiene.</p>
@@ -55,7 +55,8 @@ At Healing House, we strive to provide the best possible care in a comfortable a
 
 <div class="policy-section">
     <h3>Payment</h3>
-    <p>Payment is due at the time of service. We accept Visa, Mastercard, debit, and cash.</p>
+    <p>Payment is due at the time of service. We accept Visa, Mastercard, debit, and cash.
+    Payment options may vary depending on the therapist.</p>
     
     <h3>Insurance Claims</h3>
     <p>We provide receipts suitable for submission to insurance providers. Direct billing is available for select insurance companies. It is the client's responsibility to verify coverage with their insurance provider.</p>
