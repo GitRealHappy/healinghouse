@@ -19,7 +19,7 @@ Our therapists tailor each session to your specific needs, taking the time to un
         <div class="bio-text">
             <p class="bio-intro">Milan Peters graduated from the Registered Massage Therapy program at CDI College in 2019. She brings a holistic approach to treatment aware of the interconnectedness of the body and mind.<span class="dots">...</span></p>
             <div class="more-text">
-                <p>At fourteen years old she was diagnosed with Crohn's disease and has since learned to manage a chronic illness and still live a joy-filled life. Her own journey towards health inspires her to help others on their paths towards healing. Milan tailors each treatment to the individual's needs and mindfully addresses specific concerns and goals. Her treatment style often includes Swedish massage techniques, myofascial release, active and passive stretching and trigger point release in a gentle way to help restore function in the body and encourage nervous system regulation.</p>
+                <p>At fourteen years old she was diagnosed with Crohn's disease and has since learned to manage a chronic illness and still live a joy-filled life. Her own journey towards health inspires her to help others on their paths towards healing. Milan tailors each treatment to the individual's needs and mindfully addresses specific concerns and goals. Her treatment style includes Swedish massage techniques, myofascial release, active and passive stretching, Craniosacral Therapy (CST), and trigger point release in a gentle way to help restore function in the body and encourage nervous system regulation.</p>
             </div>
             <button class="read-more-btn" aria-expanded="false">Read More</button>
         </div>

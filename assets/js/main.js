@@ -79,14 +79,22 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             // Handle RMT info read more
-            const rmtInfoDiv = this.closest('.rmt-info');
-            if (rmtInfoDiv) {
-                const moreTextDiv = rmtInfoDiv.querySelector('.rmt-expanded-content');
-
+            const serviceInfoDiv = this.closest('.rmt-info, .reiki-info, .pathweaving-info');
+            if (serviceInfoDiv) {
+                const moreTextDiv = serviceInfoDiv.querySelector('.more-text');
                 if (moreTextDiv) {
                     moreTextDiv.classList.toggle('expanded');
                     const isExpanded = moreTextDiv.classList.contains('expanded');
-                    this.textContent = isExpanded ? 'Show Less' : 'What is Registered Massage Therapy?';
+                    
+                    // Set appropriate button text based on service type
+                    if (serviceInfoDiv.classList.contains('rmt-info')) {
+                        this.textContent = isExpanded ? 'Show Less' : 'What is Registered Massage Therapy?';
+                    } else if (serviceInfoDiv.classList.contains('reiki-info')) {
+                        this.textContent = isExpanded ? 'Show Less' : 'What is Certified Usui Master Reiki?';
+                    } else if (serviceInfoDiv.classList.contains('pathweaving-info')) {
+                        this.textContent = isExpanded ? 'Show Less' : 'What is Pathweaving?';
+                    }
+                    
                     this.setAttribute('aria-expanded', isExpanded);
                 }
             }

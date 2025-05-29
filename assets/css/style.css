@@ -262,72 +262,49 @@ img {
     margin-bottom: 1rem;
 }
 
-/* RMT Info Section in Service Card */
-.rmt-info {
+/* Service Info Styles */
+.rmt-info,
+.reiki-info,
+.pathweaving-info {
     margin-top: 1rem;
 }
 
-.rmt-info-btn {
-    background: var(--gray-color);
-    border: 2px solid var(--primary-color);
+.read-more-btn {
+    background: none;
+    border: none;
     color: var(--primary-color);
-    font-weight: 600;
     cursor: pointer;
-    padding: 0.75rem 1rem;
-    display: block;
-    margin: 0 auto;
-    text-decoration: none;
-    font-size: 0.9rem;
-    border-radius: 6px;
-    transition: all 0.3s ease;
-    position: relative;
-}
-
-.rmt-info-btn::after {
-    content: " ▼";
-    font-size: 0.8rem;
-    margin-left: 0.5rem;
-    transition: transform 0.3s ease;
-}
-
-.rmt-info-btn[aria-expanded="true"]::after {
-    transform: rotate(180deg);
-}
-
-.rmt-info-btn:hover {
-    background: var(--primary-color);
-    color: var(--light-color);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.rmt-expanded-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease-in-out;
-    text-align: left;
-    margin-top: 1rem;
-}
-
-.rmt-expanded-content.expanded {
-    max-height: 1000px;
-}
-
-.rmt-expanded-content h4 {
-    color: var(--primary-color);
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
     font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    transition: color 0.3s;
 }
 
-.rmt-expanded-content ul {
-    margin-left: 1.5rem;
+.read-more-btn:hover {
+    color: var(--accent-color);
+}
+
+.more-text {
+    display: none;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.more-text.expanded {
+    display: block;
+}
+
+.more-text p {
     margin-bottom: 1rem;
 }
 
-.rmt-expanded-content li {
-    margin-bottom: 0.25rem;
-    line-height: 1.4;
+.more-text ul {
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+.more-text li {
+    margin-bottom: 0.5rem;
 }
 
 /* About Section */
@@ -440,22 +417,6 @@ img {
 
 .team-member .more-text p:last-child {
     margin-bottom: 0;
-}
-
-.read-more-btn {
-    background: none;
-    border: none;
-    color: var(--primary-color);
-    font-weight: bold;
-    cursor: pointer;
-    padding: 0.25rem 0; /* Minimal padding */
-    display: inline-block;
-    margin-top: 0.5rem; /* Space above the button */
-    text-decoration: underline;
-}
-
-.read-more-btn:hover {
-    color: var(--accent-color);
 }
 
 .team-book-button {
@@ -665,7 +626,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
 
 .address-container {
