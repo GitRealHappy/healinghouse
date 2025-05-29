@@ -83,6 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (serviceInfoDiv) {
                 const moreTextDiv = serviceInfoDiv.querySelector('.more-text');
                 if (moreTextDiv) {
+                    // Toggle just the clicked content
                     moreTextDiv.classList.toggle('expanded');
                     const isExpanded = moreTextDiv.classList.contains('expanded');
                     
