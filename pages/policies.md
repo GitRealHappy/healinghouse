@@ -19,9 +19,6 @@ At Healing House, we strive to provide the best possible care in a comfortable a
     <h3>Cancellations & Rescheduling</h3>
     <p>Cancellations with less than 24 hours notice and missed appointments without notice may be subject to a fee of up to 100% of the treatment cost.</p>
     
-    <h3>Late Cancellations</h3>
-    <p>Cancellations with less than 24 hours' notice may be subject to a fee.</p>
-    
     <h3>No-Shows</h3>
     <p>Missed appointments without notice will be subject to a fee of 100% of the scheduled service.</p>
 </div>
