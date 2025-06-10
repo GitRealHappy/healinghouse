@@ -3,6 +3,7 @@ layout: page
 title: RMT Pricing & Clinic Hours in Abbotsford | Healing House
 description: Find massage therapy pricing for 30, 60, and 90-minute sessions and clinic hours for Healing House in Abbotsford, BC. Direct billing available.
 permalink: /pricing/
+class: pricing-page
 ---
 
 # Pricing

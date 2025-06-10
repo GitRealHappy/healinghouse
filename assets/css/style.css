@@ -944,7 +944,7 @@ img {
     /* Mobile Phone: Slide from Top (up to 600px) */
     @media (max-width: 600px) {
         .site-title {
-            font-size: 1.1rem; /* Further reduce if needed */
+            font-size: 1.2rem; /* Increased from 1.1rem for better readability */
             max-width: 65vw;
         }
         .nav-links {
@@ -989,7 +989,7 @@ img {
 
 @media (max-width: 500px) {
     .site-title {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         max-width: 55vw;
     }
 }
@@ -1154,4 +1154,18 @@ img {
 .book-cta p {
     color: var(--gray-color); /* Lighter text for paragraph */
     margin-bottom: 1.5rem;
+}
+
+/* Pricing Page Specific Styles */
+.pricing-page .page-body h2 {
+    text-align: center;
+}
+
+.pricing-page .page-body h1#pricing {
+    text-align: center;
+}
+
+/* Policies Page Specific Styles */
+.policies-page .page-body h2 {
+    text-align: center;
 } 

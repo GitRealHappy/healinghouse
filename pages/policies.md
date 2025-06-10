@@ -3,6 +3,7 @@ layout: page
 title: Clinic Policies | Healing House Abbotsford Massage Therapy
 description: Review the clinic policies for Healing House in Abbotsford, including booking, cancellation, health, safety, and privacy information for RMT services.
 permalink: /policies/
+class: policies-page
 ---
 
 # Clinic Policies
