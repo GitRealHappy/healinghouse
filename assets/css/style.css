@@ -1122,11 +1122,31 @@ img {
 }
 
 .team-book-button {
-    display: block; 
-    width: 100%; 
+    display: block;
+    width: 100%;
     text-align: center;
-    margin-top: auto; 
-    padding: 0.75rem 1rem; 
+    margin-top: auto;
+    padding: 0.75rem 1rem;
+}
+
+.team-member .team-status-badge {
+    align-self: center;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.3rem 0.9rem;
+    border-radius: 20px;
+    margin: -0.5rem auto 1rem auto;
+}
+
+.team-book-button.disabled {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    opacity: 0.7;
+    cursor: not-allowed;
+    pointer-events: none;
 }
 
 /* Book Now CTA Section */

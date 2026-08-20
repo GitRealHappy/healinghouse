@@ -42,17 +42,20 @@ Our therapists tailor each session to your specific needs, taking the time to un
     </div>
     
     <div class="team-member">
-        <img src="{{ '/assets/images/team/wendysanders.jpeg' | relative_url }}" alt="Wendy Sanders, RMT at Healing House Abbotsford" class="team-photo">
-        <h3>Wendy Sanders, RMT</h3>
+        <img src="{{ '/assets/images/team/brittany.png' | relative_url }}" alt="Brittany Penzer, RMT at Healing House Abbotsford" class="team-photo">
+        <h3>Brittany Penzer, RMT</h3>
         <p class="team-title">Registered Massage Therapist</p>
+        <p class="team-status-badge">Not Accepting New Clients</p>
         <div class="bio-text">
-            <p class="bio-intro">Wendy Sanders is a Registered Massage Therapist with more than 15 yrs experience. She grew up in North Vancouver and moved to Abbotsford with her young family a few years ago.<span class="dots">...</span></p>
+            <p class="bio-intro">Brittany graduated the 3000 hour program from West Coast College of Massage Therapy in 2014. Her interest in the profession came from receiving treatment herself for sports injuries, repetitive stress injuries and suffering motor vehicle accident injuries.<span class="dots">...</span></p>
             <div class="more-text">
-                <p>Wendy feels fortunate to have found a career she is passionate about. Whether it's injury related, stress related or pre and post natal, Wendy will provide you with a treatment that helps you achieve your health related goals. Wendy is able to direct bill Blue Cross, RCMP and Veterans Affairs.</p>
+                <p>Always knowing she wanted to be in a profession designed to help an individual's physical and mental well being, she enrolled to see if massage was the right fit. After falling in love with the intricate workings of the human anatomy and working with her hands, she knew this was the profession for her.</p>
+                <p>Brittany started working as an RMT in South Surrey, BC. She uses a combination of Swedish massage, deep tissue techniques, trigger point release, contractile myofascial release and stretching techniques to help achieve optimal wellbeing determined by the patients individual needs.</p>
+                <p>In her spare time, she likes to be outdoors skiing, swimming, golfing, hiking and biking. She has a passion for music, often at concerts or playing music with friends and family. Sometimes it's just simply being cozy at home drawing or painting.</p>
             </div>
             <button class="read-more-btn" aria-expanded="false">Read More</button>
         </div>
-        <a href="https://healinghouseabbotsford.janeapp.com/#/staff_member/4" target="_blank" class="cta-button team-book-button">Book with Wendy</a>
+        <span class="cta-button team-book-button disabled" aria-disabled="true">Not Accepting New Clients</span>
     </div>
 
     <div class="team-member">
